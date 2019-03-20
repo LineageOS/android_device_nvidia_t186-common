@@ -14,14 +14,22 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t186
-TARGET_TEGRA_GPU     ?= nvgpu
+TARGET_TEGRA_VERSION  := t186
+TARGET_TEGRA_KEYSTORE ?= nvkeystore
+TARGET_TEGRA_GPU      ?= nvgpu
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
 
 PRODUCT_PACKAGES += \
+    init.tlk.rc \
     ueventd.t186ref.rc
+
+# Gatekeeper HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service \
+    libtrusty
 
 # Graphics
 PRODUCT_PACKAGES += \
