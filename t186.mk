@@ -17,6 +17,9 @@
 TARGET_TEGRA_VERSION := t186
 TARGET_TEGRA_GPU     ?= nvgpu
 
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
+
 PRODUCT_PACKAGES += \
     init.t18x.rc \
     init.t18x_common.rc \
