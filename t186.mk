@@ -17,4 +17,7 @@
 TARGET_TEGRA_VERSION := t186
 TARGET_TEGRA_GPU     ?= nvgpu
 
+# System properties
+include $(LOCAL_PATH)/system_prop.mk
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
