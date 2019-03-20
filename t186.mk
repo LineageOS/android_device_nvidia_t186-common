@@ -20,4 +20,7 @@ TARGET_TEGRA_GPU     ?= nvgpu
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
 
+PRODUCT_PACKAGES += \
+    ueventd.t186ref.rc
+
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
