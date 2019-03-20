@@ -14,8 +14,9 @@
 # limitations under the License.
 #
 
-TARGET_TEGRA_VERSION := t186
-TARGET_TEGRA_GPU     ?= nvgpu
+TARGET_TEGRA_VERSION  := t186
+TARGET_TEGRA_KEYSTORE ?= nvkeystore
+TARGET_TEGRA_GPU      ?= nvgpu
 
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
@@ -23,6 +24,7 @@ include $(LOCAL_PATH)/system_prop.mk
 PRODUCT_PACKAGES += \
     init.t18x.rc \
     init.t18x_common.rc \
+    init.tlk.rc \
     ueventd.t186ref.rc
 
 $(call inherit-product, device/nvidia/tegra-common/tegra.mk)
