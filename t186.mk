@@ -20,6 +20,9 @@ TARGET_TEGRA_GPU     ?= nvgpu
 # System properties
 include $(LOCAL_PATH)/system_prop.mk
 
+PRODUCT_PACKAGES += \
+    ueventd.t186ref.rc
+
 # Graphics
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
