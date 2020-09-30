@@ -26,7 +26,6 @@ r_dir_file(lkm_loader, factory_file);
 allow lkm_loader vendor_firmware_wifi_file:file r_file_perms;
 allow lkm_loader kernel:process setsched;
 allow lkm_loader kernel:system module_request;
-allow lkm_loader system_file:file execute_no_trans;
 allow lkm_loader system_file:system module_load;
 allow lkm_loader vendor_file:system module_load;
 allow lkm_loader self:udp_socket { create ioctl };
