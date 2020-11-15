@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,19 +11,33 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-TARGET_TEGRA_VERSION  := t186
-TARGET_TEGRA_KEYSTORE ?= nvkeystore
-TARGET_TEGRA_GPU      ?= nvgpu
+LOCAL_PATH := device/nvidia/t186-common/vendor
 
-# System properties
-include $(LOCAL_PATH)/system_prop.mk
+$(call inherit-product, $(LOCAL_PATH)/t186-recovery.mk)
 
+# Xusb firmware
 PRODUCT_PACKAGES += \
-    init.t18x.rc \
-    init.t18x_common.rc \
-    init.tlk.rc \
-    ueventd.t186ref.rc
+    tegra18x_xusb_firmware
 
-include device/nvidia/tegra-common/tegra.mk
+# GPU firmware
+PRODUCT_PACKAGES += \
+    acr_ucode \
+    fecs \
+    fecs_sig \
+    gpccs \
+    gpccs_sig \
+    gpmu_ucode \
+    gpmu_ucode_desc \
+    gpmu_ucode_image \
+    gpu2cde \
+    NETA_img \
+    pmu_bl \
+    pmu_sig
+
+# General firmware
+PRODUCT_PACKAGES += \
+    nvhost_nvdec030_ns \
+    nvhost_nvenc061 \
+    nvhost_nvjpg011 \
+    vic04_ucode
