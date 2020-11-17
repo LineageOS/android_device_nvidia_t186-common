@@ -1,0 +1,18 @@
+# Firmware
+l4t-t194	drivers/lib/firmware/gp10b/acr_ucode.bin		t186/firmware/gp10b/acr_ucode.bin
+l4t-t194	drivers/lib/firmware/gp10b/fecs.bin			t186/firmware/gp10b/fecs.bin
+l4t-t194	drivers/lib/firmware/gp10b/fecs_sig.bin			t186/firmware/gp10b/fecs_sig.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpccs.bin			t186/firmware/gp10b/gpccs.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpccs_sig.bin		t186/firmware/gp10b/gpccs_sig.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpmu_ucode.bin		t186/firmware/gp10b/gpmu_ucode.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpmu_ucode_desc.bin		t186/firmware/gp10b/gpmu_ucode_desc.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpmu_ucode_image.bin		t186/firmware/gp10b/gpmu_ucode_image.bin
+l4t-t194	drivers/lib/firmware/gp10b/gpu2cde.bin			t186/firmware/gp10b/gpu2cde.bin
+l4t-t194	drivers/lib/firmware/gp10b/NETA_img.bin			t186/firmware/gp10b/NETA_img.bin
+l4t-t194	drivers/lib/firmware/gp10b/pmu_bl.bin			t186/firmware/gp10b/pmu_bl.bin
+l4t-t194	drivers/lib/firmware/gp10b/pmu_sig.bin			t186/firmware/gp10b/pmu_sig.bin
+l4t-t194	drivers/lib/firmware/tegra18x/nvhost_nvdec030_ns.fw	t186/firmware/tegra18x/nvhost_nvdec030_ns.fw
+l4t-t194	drivers/lib/firmware/tegra18x/nvhost_nvenc061.fw	t186/firmware/tegra18x/nvhost_nvenc061.fw
+l4t-t194	drivers/lib/firmware/tegra18x/nvhost_nvjpg011.fw	t186/firmware/tegra18x/nvhost_nvjpg011.fw
+l4t-t194	drivers/lib/firmware/tegra18x/vic04_ucode.bin		t186/firmware/tegra18x/vic04_ucode.bin
+l4t-t194	drivers/lib/firmware/tegra18x_xusb_firmware		t186/firmware/xusb/tegra18x_xusb_firmware
