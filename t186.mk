@@ -18,8 +18,8 @@ TARGET_TEGRA_VERSION  := t186
 TARGET_TEGRA_KEYSTORE ?= nvkeystore
 TARGET_TEGRA_GPU      ?= nvgpu
 
-# System properties
-include device/nvidia/t186-common/system_prop.mk
+# Properties
+include device/nvidia/t186-common/properties.mk
 
 PRODUCT_PACKAGES += \
     init.t18x.rc \
