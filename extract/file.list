@@ -1,5 +1,5 @@
 # Firmware
-l4t-t194	drivers/lib/firmware/gp10b/acr_ucode.bin		t186/firmware/gp10b/acr_ucode.bin
+l4t-t194	drivers/lib/firmware/gp10b/acr_ucode_prod.bin		t186/firmware/gp10b/acr_ucode_prod.bin
 l4t-t194	drivers/lib/firmware/gp10b/fecs.bin			t186/firmware/gp10b/fecs.bin
 l4t-t194	drivers/lib/firmware/gp10b/fecs_sig.bin			t186/firmware/gp10b/fecs_sig.bin
 l4t-t194	drivers/lib/firmware/gp10b/gpccs.bin			t186/firmware/gp10b/gpccs.bin
