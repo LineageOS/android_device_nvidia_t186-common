@@ -113,6 +113,9 @@
 /sys/devices/platform/host1x 17000000.gp10b/elpg_enable 0664 system system
 /sys/devices/platform/host1x 17000000.gp10b/blcg_enable 0664 system system
 /sys/devices/platform/host1x 15210000.nvdisplay/enable 0664 system system
+/sys/devices/17000000.gp10b/devfreq/17000000.gp10b available_frequencies 0664 system system
+/sys/devices/17000000.gp10b/devfreq/17000000.gp10b max_freq 0664 system system
+/sys/devices/17000000.gp10b/devfreq/17000000.gp10b min_freq 0664 system system
 # mmc card
 /sys/devices/sdhci-tegra.0/mmc_host/mmc2/mmc2* ios_timing 0664	system	system
 /sys/devices/sdhci-tegra.0/mmc_host/mmc2/mmc2* error_stats 0664	system	system
