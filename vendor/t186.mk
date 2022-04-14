@@ -18,7 +18,7 @@ $(call inherit-product, $(LOCAL_PATH)/t186-recovery.mk)
 
 # Xusb firmware
 PRODUCT_PACKAGES += \
-    tegra18x_xusb_firmware
+    xusb.bin
 
 # GPU firmware
 PRODUCT_PACKAGES += \
