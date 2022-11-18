@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq ($(TARGET_TEGRA_FIRMWARE_BRANCH),r32)
 LOCAL_PATH := $(call my-dir)
-T186_FIRMWARE_PATH := ../../../../../vendor/nvidia/t186/firmware
+T186_FIRMWARE_PATH := ../../../../../../vendor/nvidia/t186/r32/firmware
 
 T18X_XUSB_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/tegra18x_xusb_firmware
 $(T18X_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
@@ -189,3 +190,4 @@ LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/tegra18x
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 include $(BUILD_PREBUILT)
+endif

@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +11,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-TARGET_TEGRA_VERSION         := t186
-TARGET_TEGRA_FIRMWARE_BRANCH ?= r32
+T186_FIRMWARE_PATH := vendor/nvidia/t186/r32/firmware
 
-# Properties
-include device/nvidia/t186-common/properties.mk
-
-PRODUCT_PACKAGES += \
-    init.t18x.rc \
-    init.t18x_common.rc \
-    init.tlk.rc \
-    ueventd.t186ref.rc
-
-include device/nvidia/tegra-common/tegra.mk
+# Firmware
+ifeq ($(TARGET_TEGRA_KERNEL),4.9)
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/tegra18x_xusb_firmware
+else
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra186/xusb.bin
+endif

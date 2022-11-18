@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,30 +14,6 @@
 
 LOCAL_PATH := device/nvidia/t186-common/vendor
 
-$(call inherit-product, $(LOCAL_PATH)/t186-recovery.mk)
-
-# Xusb firmware
-PRODUCT_PACKAGES += \
-    xusb.bin
-
-# GPU firmware
-PRODUCT_PACKAGES += \
-    acr_ucode_prod \
-    fecs \
-    fecs_sig \
-    gpccs \
-    gpccs_sig \
-    gpmu_ucode \
-    gpmu_ucode_desc \
-    gpmu_ucode_image \
-    gpu2cde \
-    NETA_img \
-    pmu_bl \
-    pmu_sig
-
-# General firmware
-PRODUCT_PACKAGES += \
-    nvhost_nvdec030_ns \
-    nvhost_nvenc061 \
-    nvhost_nvjpg011 \
-    vic04_ucode
+ifneq ("$(wildcard $(LOCAL_PATH)/$(TARGET_TEGRA_FIRMWARE_BRANCH)/t186.mk)","")
+$(call inherit-product, $(LOCAL_PATH)/$(TARGET_TEGRA_FIRMWARE_BRANCH)/t186.mk)
+endif
