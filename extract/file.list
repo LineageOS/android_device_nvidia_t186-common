@@ -31,3 +31,18 @@ l4t-t186	Linux_for_Tegra/bootloader/preboot_d15_prod_cr.bin	t186/bootloader/preb
 l4t-t194	Linux_for_Tegra/bootloader/spe.bin			t186/bootloader/spe.bin
 l4t-t194	Linux_for_Tegra/bootloader/tos-mon-only.img		t186/bootloader/tos-mon-only.img
 l4t-t186	Linux_for_Tegra/bootloader/t186ref/warmboot.bin		t186/bootloader/warmboot.bin
+
+# Tegraflash
+l4t-t186	Linux_for_Tegra/bootloader/tegraflash.py		t186/tegraflash/tegraflash.py
+l4t-t186	Linux_for_Tegra/bootloader/tegraflash_internal.py	t186/tegraflash/tegraflash_internal.py
+l4t-t186	Linux_for_Tegra/bootloader/sw_memcfg_overlay.pl		t186/tegraflash/sw_memcfg_overlay.pl
+l4t-t186	Linux_for_Tegra/bootloader/tegrabct_v2			t186/tegraflash/tegrabct_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegradevflash_v2		t186/tegraflash/tegradevflash_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegrahost_v2			t186/tegraflash/tegrahost_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegraparser_v2		t186/tegraflash/tegraparser_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegrarcm_v2			t186/tegraflash/tegrarcm_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegrasign_v2			t186/tegraflash/tegrasign_v2
+l4t-t186	Linux_for_Tegra/bootloader/tegrasign_v3.py		t186/tegraflash/tegrasign_v3.py
+l4t-t186	Linux_for_Tegra/bootloader/tegrasign_v3_internal.py	t186/tegraflash/tegrasign_v3_internal.py
+l4t-t186	Linux_for_Tegra/bootloader/tegrasign_v3_util.py		t186/tegraflash/tegrasign_v3_util.py
+l4t-t186	Linux_for_Tegra/bootloader/tegraopenssl			t186/tegraflash/tegraopenssl

@@ -15,3 +15,4 @@
 #
 
 FILELIST_PATHS+=("t186-common");
+PATCH_PATHS+=("t186-common");
