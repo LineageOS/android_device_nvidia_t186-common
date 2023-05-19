@@ -16,12 +16,6 @@ ifeq ($(TARGET_TEGRA_FIRMWARE_BRANCH),r32)
 LOCAL_PATH := $(call my-dir)
 T186_FIRMWARE_PATH := ../../../../../../vendor/nvidia/t186/r32/firmware
 
-T18X_XUSB_SYMLINK := $(TARGET_OUT_VENDOR)/firmware/tegra18x_xusb_firmware
-$(T18X_XUSB_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	$(hide) ln -sf ./nvidia/tegra186/xusb.bin $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(T18X_XUSB_SYMLINK)
-
 include $(CLEAR_VARS)
 LOCAL_MODULE               := xusb.bin
 LOCAL_SRC_FILES            := $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware
@@ -29,6 +23,8 @@ LOCAL_MODULE_CLASS         := ETC
 LOCAL_MODULE_PATH          := $(TARGET_OUT_VENDOR)/firmware/nvidia/tegra186
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
+LOCAL_POST_INSTALL_CMD     := \
+    ln -sf ./nvidia/tegra186/xusb.bin $(TARGET_OUT_VENDOR)/firmware/tegra18x_xusb_firmware
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
