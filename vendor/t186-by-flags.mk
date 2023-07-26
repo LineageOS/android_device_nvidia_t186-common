@@ -15,5 +15,5 @@
 LOCAL_PATH := device/nvidia/t186-common/vendor
 
 ifneq ("$(wildcard $(LOCAL_PATH)/$(TARGET_TEGRA_FIRMWARE_BRANCH)/t186.mk)","")
-$(call inherit-product, $(LOCAL_PATH)/$(TARGET_TEGRA_FIRMWARE_BRANCH)/t186.mk)
+include $(LOCAL_PATH)/$(TARGET_TEGRA_FIRMWARE_BRANCH)/t186.mk
 endif

@@ -14,7 +14,7 @@
 
 LOCAL_PATH := device/nvidia/t186-common/vendor/r32
 
-$(call inherit-product, $(LOCAL_PATH)/t186-recovery.mk)
+include $(LOCAL_PATH)/t186-recovery.mk
 
 # Xusb firmware
 PRODUCT_PACKAGES += \
