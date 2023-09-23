@@ -31,9 +31,3 @@ l4t-t186	bootloader/preboot_d15_prod_cr.bin	bootloader/
 l4t-t186	bootloader/spe.bin			bootloader/
 l4t-t186	bootloader/tos-mon-only.img		bootloader/
 l4t-t186	bootloader/t186ref/warmboot.bin		bootloader/
-
-# Bootloader r35
-l4t-t194	bootloader/adsp-fw.bin			bootloader/
-l4t-t194	bootloader/camera-rtcpu-sce.img		bootloader/
-l4t-t194	bootloader/spe.bin			bootloader/
-l4t-t194	bootloader/tos-mon-only.img		bootloader/
