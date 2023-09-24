@@ -1,0 +1,1 @@
+l4t-t186	https://developer.nvidia.com/downloads/embedded/l4t/r32_release_v7.4/t186/jetson_linux_r32.7.4_aarch64.tbz2	l4t	r32
