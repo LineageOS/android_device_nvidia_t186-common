@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e58c7481_be744861",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2024-04-27T08:24:00Z",
+      "side": 1,
+      "message": "See https://forums.developer.nvidia.com/t/lineage-android-os-for-the-jetson-tx2-and-tx2-nx/193847/83",
+      "revId": "4dbacbc1267493551bec7733148c24331879aa54",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
