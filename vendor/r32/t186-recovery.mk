@@ -17,8 +17,10 @@ T186_FIRMWARE_PATH := vendor/nvidia/t186/r32/firmware
 # Firmware
 ifeq ($(TARGET_TEGRA_KERNEL),4.9)
 PRODUCT_COPY_FILES += \
-    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/tegra18x_xusb_firmware
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/tegra18x_xusb_firmware \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/tegra18x_xusb_firmware
 else
 PRODUCT_COPY_FILES += \
-    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra186/xusb.bin
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra186/xusb.bin \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra186/xusb.bin
 endif
