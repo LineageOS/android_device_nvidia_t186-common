@@ -1,0 +1,158 @@
+{
+    "Nodes": [
+        {
+            "Name": "CPUCluster0MinFreq",
+            "Path": "/sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq",
+            "Values": [
+                "883200",
+                "921600",
+                "998400",
+                "1036800",
+                "1075200",
+                "1152000",
+                "1190400",
+                "1228800",
+                "1305600",
+                "1344000",
+                "1382400",
+                "1420800",
+                "1459200",
+                "1536000",
+                "1574400",
+                "1612800",
+                "1651200",
+                "1689600",
+                "1728000",
+                "1766400",
+                "1804800",
+                "1843200",
+                "1881600",
+                "1920000",
+                "1958400",
+                "1996800",
+                "2035200"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "CPUCluster1MinFreq",
+            "Path": "/sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq",
+            "Values": [
+                "998400",
+                "1036800",
+                "1075200",
+                "1152000",
+                "1190400",
+                "1228800",
+                "1267200",
+                "1344000",
+                "1382400",
+                "1420800",
+                "1459200",
+                "1497600",
+                "1536000",
+                "1612800",
+                "1651200",
+                "1689600",
+                "1728000",
+                "1766400",
+                "1804800",
+                "1843200",
+                "1881600",
+                "1920000",
+                "1958400",
+                "1996800",
+                "2035200"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 1000,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 1000,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "GAME_LOADING",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 0,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "GAME_LOADING",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 0,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "GAME",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 0,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "GAME",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 0,
+            "Value": "1344000"
+        },
+        {
+            "PowerHint": "DISPLAY_INACTIVE",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 0,
+            "Value": "883200"
+        },
+        {
+            "PowerHint": "DISPLAY_INACTIVE",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 0,
+            "Value": "998400"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 5000,
+            "Value": "1420800"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 5000,
+            "Value": "1420800"
+        },
+        {
+            "PowerHint": "DISPLAY_CHANGE",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 5000,
+            "Value": "1536000"
+        },
+        {
+            "PowerHint": "DISPLAY_CHANGE",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 5000,
+            "Value": "1536000"
+        },
+        {
+            "PowerHint": "DISPLAY_UPDATE_IMMINENT",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 5000,
+            "Value": "1536000"
+        },
+        {
+            "PowerHint": "DISPLAY_UPDATE_IMMINENT",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 5000,
+            "Value": "1536000"
+        }
+    ]
+}
