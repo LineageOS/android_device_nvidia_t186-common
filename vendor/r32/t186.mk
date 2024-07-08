@@ -16,6 +16,8 @@ LOCAL_PATH := device/nvidia/t186-common/vendor/r32
 
 include $(LOCAL_PATH)/t186-recovery.mk
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Xusb firmware
 PRODUCT_PACKAGES += \
     xusb.bin
