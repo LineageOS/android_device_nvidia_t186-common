@@ -20,6 +20,7 @@ l4t-t186	drivers/lib/firmware/tegra18x_xusb_firmware		firmware/xusb/
 # Bootloader r32
 l4t-t186	bootloader/adsp-fw.bin			bootloader/
 l4t-t186	bootloader/bpmp.bin			bootloader/
+l4t-t186	bootloader/eks.img			bootloader/
 l4t-t186	bootloader/camera-rtcpu-sce.img		bootloader/
 l4t-t186	bootloader/mb1_prod.bin			bootloader/
 l4t-t186	bootloader/mb1_recovery_prod.bin	bootloader/
