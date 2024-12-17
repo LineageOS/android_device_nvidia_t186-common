@@ -13,33 +13,47 @@
 # limitations under the License.
 
 LOCAL_PATH := device/nvidia/t186-common/vendor/r32
-
-include $(LOCAL_PATH)/t186-recovery.mk
-
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
-# Xusb firmware
-PRODUCT_PACKAGES += \
-    xusb.bin
+T186_FIRMWARE_PATH := vendor/nvidia/t186/r32/firmware
 
 # GPU firmware
-PRODUCT_PACKAGES += \
-    acr_ucode_prod \
-    fecs \
-    fecs_sig \
-    gpccs \
-    gpccs_sig \
-    gpmu_ucode \
-    gpmu_ucode_desc \
-    gpmu_ucode_image \
-    gpu2cde \
-    NETA_img \
-    pmu_bl \
-    pmu_sig
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/gp10b/acr_ucode_prod.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/acr_ucode_prod.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/fecs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/fecs.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/fecs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/fecs_sig.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpccs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpccs.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpccs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpccs_sig.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpmu_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpmu_ucode.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpmu_ucode_desc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpmu_ucode_desc.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpmu_ucode_image.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpmu_ucode_image.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/gpu2cde.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/gpu2cde.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/NETA_img.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/NETA_img.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/pmu_bl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/pmu_bl.bin \
+    $(T186_FIRMWARE_PATH)/gp10b/pmu_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gp10b/pmu_sig.bin
 
 # General firmware
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/tegra18x/nvhost_nvdec030_ns.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra18x/nvhost_nvdec030_ns.fw \
+    $(T186_FIRMWARE_PATH)/tegra18x/nvhost_nvenc061.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra18x/nvhost_nvenc061.fw \
+    $(T186_FIRMWARE_PATH)/tegra18x/nvhost_nvenc061.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra18x/nvhost_nvenc061.fw \
+    $(T186_FIRMWARE_PATH)/tegra18x/vic04_ucode.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/tegra18x/vic04_ucode.bin
+
+# Xusb firmware
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:$(TARGET_COPY_OUT_VENDOR)/firmware/firmware/nvidia/tegra186/xusb.bin
+
 PRODUCT_PACKAGES += \
-    nvhost_nvdec030_ns \
-    nvhost_nvenc061 \
-    nvhost_nvjpg011 \
-    vic04_ucode
+    tegra18x_xusb_firmware_symlink
+
+
+# Recovery / Boot Ramdisk
+ifeq ($(TARGET_TEGRA_KERNEL),4.9)
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/tegra18x_xusb_firmware \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/tegra18x_xusb_firmware
+else
+PRODUCT_COPY_FILES += \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:recovery/root/lib/firmware/nvidia/tegra186/xusb.bin \
+    $(T186_FIRMWARE_PATH)/xusb/tegra18x_xusb_firmware:$(TARGET_COPY_OUT_RAMDISK)/lib/firmware/nvidia/tegra186/xusb.bin
+endif
