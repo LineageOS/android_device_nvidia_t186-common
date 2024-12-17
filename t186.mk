@@ -20,6 +20,9 @@ TARGET_TEGRA_FIRMWARE_BRANCH ?= r32
 # Properties
 include device/nvidia/t186-common/properties.mk
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += device/nvidia/t186-common
+
 PRODUCT_PACKAGES += \
     init.t18x.rc \
     init.t18x_common.rc \
