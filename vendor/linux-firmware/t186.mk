@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/fecs_inst.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/fecs_inst.bin \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/fecs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/fecs_sig.bin \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/fecs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/fecs_sig.bin \
+    $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/gpccs_bl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/gpccs_bl.bin \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/gpccs_data.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/gpccs_data.bin \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/gpccs_inst.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/gpccs_inst.bin \
     $(T186_FIRMWARE_PATH)/nvidia/gp10b/gr/gpccs_sig.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/gp10b/gr/gpccs_sig.bin \
