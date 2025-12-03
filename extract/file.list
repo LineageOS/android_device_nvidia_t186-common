@@ -1,21 +1,7 @@
 # Firmware
-l4t-t186	drivers/lib/firmware/gp10b/acr_ucode_prod.bin		firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/fecs.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/fecs_sig.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpccs.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpccs_sig.bin		firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpmu_ucode.bin		firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpmu_ucode_desc.bin		firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpmu_ucode_image.bin		firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/gpu2cde.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/NETA_img.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/pmu_bl.bin			firmware/gp10b/
-l4t-t186	drivers/lib/firmware/gp10b/pmu_sig.bin			firmware/gp10b/
 l4t-t186	drivers/lib/firmware/tegra18x/nvhost_nvdec030_ns.fw	firmware/tegra18x/
 l4t-t186	drivers/lib/firmware/tegra18x/nvhost_nvenc061.fw	firmware/tegra18x/
 l4t-t186	drivers/lib/firmware/tegra18x/nvhost_nvjpg011.fw	firmware/tegra18x/
-l4t-t186	drivers/lib/firmware/tegra18x/vic04_ucode.bin		firmware/tegra18x/
-l4t-t186	drivers/lib/firmware/tegra18x_xusb_firmware		firmware/xusb/
 
 # Bootloader r32
 l4t-t186	bootloader/adsp-fw.bin			bootloader/

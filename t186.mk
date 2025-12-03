@@ -15,7 +15,7 @@
 #
 
 TARGET_TEGRA_VERSION         := t186
-TARGET_TEGRA_FIRMWARE_BRANCH ?= r32
+TARGET_TEGRA_FIRMWARE_BRANCH ?= linux-firmware
 
 # Properties
 include device/nvidia/t186-common/properties.mk
