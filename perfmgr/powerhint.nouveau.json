@@ -204,6 +204,24 @@
             "Node": "GPUMinFreq",
             "Duration": 5000,
             "Value": "318750000"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "CPUCluster0MinFreq",
+            "Duration": 0,
+            "Value": "2035200"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "CPUCluster1MinFreq",
+            "Duration": 0,
+            "Value": "2035200"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "1300500000"
         }
     ]
 }
