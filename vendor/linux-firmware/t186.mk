@@ -14,18 +14,9 @@
 
 T186_FIRMWARE_PATH := external/linux-firmware-mainline/firmware
 
-DOWNSTREAM_BRANCH    := r32
-T186_DOWNSTREAM_PATH := vendor/nvidia/t186/$(DOWNSTREAM_BRANCH)/firmware
-
 # Upstream firmware
 PRODUCT_PACKAGES += \
     linux_firmware_nvidia-tegra186
-
-# General firmware
-PRODUCT_COPY_FILES += \
-    $(T186_DOWNSTREAM_PATH)/tegra18x/nvhost_nvdec030_ns.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/tegra186/nvdec.bin \
-    $(T186_DOWNSTREAM_PATH)/tegra18x/nvhost_nvenc061.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/tegra186/nvenc.bin \
-    $(T186_DOWNSTREAM_PATH)/tegra18x/nvhost_nvjpg011.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/nvidia/tegra186/nvjpg.bin
 
 
 # Recovery / Boot Ramdisk
